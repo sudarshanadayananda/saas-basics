@@ -1,0 +1,60 @@
+$color-yellow: #ffff00;
+$color-green: #008000;
+$color-purple: #663399;
+$color-dark-green: #5c9933;
+$color-red: #da535a;
+$color-blue: #0ea2bd;
+
+$max-xss-small: 420px; // screen-xs-max
+$max-xs-small: 479px; // screen-xs-max
+$xs-small: 480px; // screen-sm-min
+$max-small: 767px; // screen-xs-max
+$small: 768px; // screen-sm-min
+$max-medium: 991px; // screen-sm-max
+$medium: 992px; // screen-md-min
+$max-large: 1199px; // screen-md-max
+$large: 1200px; // screen-lg-min
+$extra-large: 1599px;
+$max-extra-large: 1600px;
+
+$breakpoints: (
+  'max-xss-small': (
+    max-width: $max-xss-small,
+  ),
+  'xs-small': (
+    min-width: $xs-small,
+  ),
+  'small': (
+    min-width: $small,
+  ),
+  'small-xs': (
+    device-width: $small,
+  ),
+  'medium': (
+    min-width: $medium,
+  ),
+  'large': (
+    min-width: $large,
+  ),
+  'extra-large': (
+    min-width: $extra-large,
+  ),
+  'max-xs-small': (
+    max-width: $max-xs-small,
+  ),
+  'max-small': (
+    max-width: $max-small,
+  ),
+  'max-medium': (
+    max-width: $max-medium,
+  ),
+  'min-medium': (
+    min-width: $max-medium,
+  ),
+  'max-large': (
+    max-width: $max-large,
+  ),
+  'max-extra-large': (
+    max-width: $max-extra-large,
+  ),
+);

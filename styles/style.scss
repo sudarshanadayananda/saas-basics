@@ -1,0 +1,59 @@
+@import './variables';
+@import './mixins';
+@import './header';
+
+.contact {
+  @extend myHeader;
+  width: 100% - 20%;
+}
+
+// Media Queries
+
+// For typical mobile devices
+@include respondTo('max-xs-small') {
+  header {
+    @include flexCenter($color-yellow);
+  }
+}
+
+// For typical mobile devices
+// @media only screen and (max-width: 479px) {
+//   header {
+//     @include flexCenter($color-yellow);
+//   }
+// }
+
+// For mobile (landscape)
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    @include flexCenter($color-green);
+  }
+}
+
+// For tablet
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  header {
+    @include flexCenter($color-purple);
+  }
+}
+
+// For small desktop
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+  header {
+    @include flexCenter($color-dark-green);
+  }
+}
+
+// For typical desktop
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  header {
+    @include flexCenter($color-red);
+  }
+}
+
+// For large desktop
+@media only screen and (min-width: 1200px) {
+  header {
+    @include flexCenter($color-blue);
+  }
+}
